@@ -4,6 +4,9 @@ SimInspect is a proof-of-concept computer vision simulation for a conveyor-based
 
 The current version uses a rule-based OpenCV pipeline to detect and classify colored objects as they pass through an inspection region. This serves as a baseline for future machine learning-based object recognition.
 
+## Project Video:
+ https://youtu.be/IaN0UBeMf0Y
+
 ## Project Status
 
 This repository currently represents an early proof of concept.
