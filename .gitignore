@@ -10,3 +10,8 @@ dataset/
 *.log
 .DS_Store
 Thumbs.db
+.venv-label/
+datasets/
+models/
+runs/
+yolo11n.pt
