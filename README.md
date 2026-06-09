@@ -5,18 +5,25 @@ SimInspect is a proof-of-concept computer vision simulation for a conveyor-based
 The original version of this project used an OpenCV color-thresholding pipeline to detect and classify objects based on HSV masks. The current version adds a machine learning-based inspection pipeline using a custom-trained YOLO object detection model.
 
 ## Project Video:
+ https://youtu.be/-mSG7MIhLtg (ML Version V2)
+
 https://youtu.be/2-qUo2HlPfA (ML Version)
 
  https://youtu.be/IaN0UBeMf0Y (OpenCV Version)
 
 
-## Project Status
+## Project Status Model V2 Update
 
-This repo has been updated with an ML-based object detection version of the inspection system. The YOLO model was trained on a custom MuJoCo-generated dataset containing three simulated object classes:
+This repo has been updated with an improved ML-based object detection version of the inspection system. This new dataset combines the original model's dataset as well as a new dataset. The YOLO model was trained on a new custom MuJoCo-generated dataset containing three simulated object classes:
 
 - `red_apple`
 - `green_box`
 - `blue_fish`
+
+| Version | Main Change | Result |
+|---|---|---|
+| v1 | Initial YOLO detector trained on first labeled MuJoCo dataset | Strong green_box and red_apple detection, inconsistent blue_fish detection |
+| v2 | Improved annotations and dataset quality, especially for blue_fish | ~90% average confidence across all three object classes |
 
 The dataset was manually annotated using MakeSense.ai and exported in YOLO format. The trained model is integrated into the MuJoCo simulation loop to detect objects from the virtual inspection camera and display bounding boxes, class labels, confidence scores, and routing decisions in real time.
 
