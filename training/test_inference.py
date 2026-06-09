@@ -1,8 +1,8 @@
 from ultralytics import YOLO
 
 
-MODEL_PATH = "runs/detect/training/runs/siminspect_yolo_v1/weights/best.pt"
-TEST_IMAGE = "datasets/siminspect_v1/images/test/frame_00003.jpg"
+MODEL_PATH = "runs/detect/training/runs/siminspect_yolo_v2/weights/best.pt"
+TEST_IMAGE = "datasets/siminspect_v2/images/test/frame_00003.jpg"
 
 
 def main():

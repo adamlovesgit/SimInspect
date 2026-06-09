@@ -12,7 +12,7 @@ import numpy as np
 # -----------------------------
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 SCENE_PATH = PROJECT_ROOT / "sim" / "scene.xml"
-OUTPUT_DIR = PROJECT_ROOT / "datasets" / "siminspect_v1" / "raw_images"
+OUTPUT_DIR = PROJECT_ROOT / "datasets" / "siminspect_v2" / "raw_images"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 
@@ -21,7 +21,7 @@ OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 # -----------------------------
 IMAGE_WIDTH = 640
 IMAGE_HEIGHT = 480
-NUM_IMAGES = 500
+NUM_IMAGES = 200
 CAMERA_NAME = "inspection_camera"
 
 OBJECT_JOINT_NAMES = [

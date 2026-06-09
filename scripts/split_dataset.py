@@ -4,8 +4,8 @@ import shutil
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
-RAW_IMAGE_DIR = PROJECT_ROOT / "datasets" / "siminspect_v1" / "raw_images"
-DATASET_DIR = PROJECT_ROOT / "datasets" / "siminspect_v1"
+RAW_IMAGE_DIR = PROJECT_ROOT / "datasets" / "siminspect_v2" / "raw_images"
+DATASET_DIR = PROJECT_ROOT / "datasets" / "siminspect_v2"
 
 SPLITS = {
     "train": 0.70,

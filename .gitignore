@@ -12,6 +12,7 @@ dataset/
 Thumbs.db
 .venv-label/
 datasets/
-models/
+
 runs/
 yolo11n.pt
+yolo26n.pt

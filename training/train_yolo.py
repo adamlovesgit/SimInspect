@@ -7,13 +7,14 @@ def main():
     model = YOLO("yolo11n.pt")
 
     model.train(
-        data="datasets/siminspect_v1/data.yaml",
-        epochs=30,
+        data="datasets/siminspect_v2/data.yaml",
+        epochs=50,
         imgsz=640,
-        batch=8,
-        device="cpu",
+        batch=16,
+        device=0,
         project="training/runs",
-        name="siminspect_yolo_v1",
+        name="siminspect_yolo_v2",
+        exist_ok=True,
     )
 
 

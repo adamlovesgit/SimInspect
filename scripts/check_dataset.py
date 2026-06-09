@@ -1,7 +1,7 @@
 from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-DATASET_DIR = PROJECT_ROOT / "datasets" / "siminspect_v1"
+DATASET_DIR = PROJECT_ROOT / "datasets" / "combined_dataset_v1_v2" / "siminspect_v1"  # change to siminspect_v2 when needed
 
 SPLITS = ["train", "val", "test"]
 IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png"}

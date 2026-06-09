@@ -62,7 +62,7 @@ XML = """
 </mujoco>
 """
 PROJECT_ROOT = Path(__file__).resolve().parent
-YOLO_MODEL_PATH = Path(r"C:\Users\hadam\mujocoProj\models\siminspect_yolo.pt")
+YOLO_MODEL_PATH = Path(r"C:\Users\hadam\mujocoProj\models\siminspect_yolo_v2.pt")
 
 CONFIDENCE_THRESHOLD = 0.25
 
